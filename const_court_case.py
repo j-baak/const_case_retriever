@@ -50,7 +50,7 @@ st.set_page_config(
 st.markdown("<h1 style='text-align: left; color: #1E90FF;'>헌법재판소 종국결과 파인더</h1>", unsafe_allow_html=True)
 
 cases = st.text_area(
-    '사건번호를 입력하세요.   다수의 사건번호는 쉼표(,)로 분리하세요.   한번에 백개 이상의 사건번호를 입력할 경우 에러가 발생할 수 있습니다.'
+    '사건번호를 입력하세요.   다수의 사건번호는 쉼표(,)로 분리하세요.'
 )
 
 @st.experimental_memo
