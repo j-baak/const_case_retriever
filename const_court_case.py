@@ -53,7 +53,8 @@ cases = st.text_area(
     '사건번호를 입력하세요.   다수의 사건번호는 쉼표(,)로 분리하세요.'
 )
 
-@st.experimental_memo
+# @st.experimental_memo
+@st.cache
 def convert_df(df):
    return df.to_csv().encode('utf-8')
 
