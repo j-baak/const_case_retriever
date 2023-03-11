@@ -5,6 +5,12 @@ import pandas as pd
 import streamlit as st
 import time
 
+st.set_page_config(
+    page_title="헌법재판소 결과 파인더",
+    page_icon=":open_book:",
+    layout="wide",
+)
+
 # funtion def
 def get_case(casenum):
 
@@ -38,14 +44,6 @@ def get_case(casenum):
     except:
         pass
 
-
-# configure streamlit
-st.set_page_config(
-    page_title="constitutional court case retriever",
-    page_icon="✅",
-    layout="wide"
-    # layout="centered"
-)
 
 st.markdown("<h1 style='text-align: left; color: #1E90FF;'>헌법재판소 종국결과 파인더</h1>", unsafe_allow_html=True)
 
